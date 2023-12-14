@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <meta name="theme-color" content="#111111">
+        <title>ROBO SCHOOL</title>
+        <link rel="stylesheet" href="vendor.css">
+        <link rel="stylesheet" href="main.css">
+        <script defer="defer" src="main.js"></script>
+    </head>
+    <body class="page__body">
+        <div class="site-container">
+            <header class="header">
+                <div class="container-fluid header__container">
+                    <a href="index.html" class="logo">
+                        <img loading="lazy" src="img/logo.svg" class="image" width="228" height="48" alt="Логотип robo school">
+                    </a>
+                    <nav class="nav" title="Главное меню" data-menu>
+                        <ul class="list-reset nav__list">
+                            <li class="nav__item">
+                                <a href="index.html" class="nav__link" data-scroll data-menu-item>О школе</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="index.html" class="nav__link" data-scroll data-menu-item>Тренеры</a>
+                            </li>
+                            <li class="nav__item">
+                                <a href="index.html" class="nav__link" data-scroll data-menu-item>Стоимость</a>
+                            </li>
+                        </ul>
+                        <button class="btn__reset burger-close" aria-label="Закрыть меню" data-menu-close id="close"></button>
+                    </nav>
+                    <a href="tel:+78000001122" class="phone header__phone">+7 (800-00) 0-11-22</a>
+                    <button class="btn-reset burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                        <span class="burger__line"></span>
+                    </button>                  
+                </div>
+            </header>
+            <main class="main">
+                <section class="hero">
+                    <div class="container hero__container">
+                        <div class="hero__content">
+                            <div class="hero__title">
+                                <h1 class="hero__h1">ROBO SCHOOL</h1>
+                                <span class="hero__title-text">Курсы повышения квалификации по робототехнике для педагогов начальной школы</span>
+                            </div>
+                            <a href="index.html" class="hero__link btn btn-reset" data-scroll>Записаться на курс</a>
+                        </div>
+                        <div class="hero__picture">
+                            <picture>
+                                <img loading="lazy" src="img/Group 211.png" class="hero__image" width="783" height="918" alt="Девушка, смотрящая вдаль">
+                            </picture>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <br>
+        <section  class="tariffs section-offset1" id="tariffs">
+            <h2 class="tariffs__title section-title2">УМК по программированию </h2>
+            <img loading="Pictures" src="img/image 6.png"class="photo5" width="1442" height="671" alt="фото разработчика">
+            <h2 class="tariffs__title section-title3">Описание</h2>
+            <p class="about__descr2">
+                Станьте востребованным инженером-программистом и получите одну из самых востребованных профессий в IT.
+                 Вы изучите основы программирования и основные концепции компьютерных наук, цифровые технологии, 
+                 программное обеспечение, операционные системы, базы данных, системы аналитики, 
+                 языки программирования и многое другое. Вы так же познакомитесь с тестированием и системным анализом информационных технологий.
+            </p>
+        </section>
+        <a href="index.html" class="hero__link btn2 btn-reset1" data-scroll>Записаться</a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <section class="order">
+            <div class="container order__container">
+                <div class="order__left">
+                    <h2 class="order__title">Запишитесь на курс со скидкой 10%</h2>
+                    <p class="order__descr">Акция действительна до 10 марта 2022 года</p>
+                </div>
+                <div class="order__right">
+                    <form action="#" class="form order__form" method="post">
+                        <label class="form__label">
+                            <input type="text" name="names" id="names" class="input-reset form__input input-name" placeholder="Имя" required>
+                        </label>
+                        <label class="form__label">
+                            <input type="tel" name="phone" id="phone" class="input-reset form__input input-tel" placeholder="Телефон" required>
+                        </label>
+                        <label class="form__label">
+                            <input type="email" name="email" id="email" class="input-reset form__input input-email" placeholder="E-mail" required>
+                        </label>
+                        <button  class="btn-reset btn btn--dark form__btn" onclick="sendMessage();alert('Спасибо что записались')">Отправить</button>
+                    </form>
+                </div>
+                <script src="./index.js"></script>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container-fluid footer__container">
+                <div class="footer__left">
+                    <a href="#" class="logo footer__logo">
+                        <img loading="lazy" src="img/logo.svg" class="image" width="228" height="48" alt="Логотип robo school">
+                    </a>
+                    <div class="footer__copy">© ROBO.SCHOOL</div>
+                </div>
+                <a  class="phone">+7 (800-00) 0-11-22</a>
+            </div>
+        </footer>
+    </body>
+</html>
